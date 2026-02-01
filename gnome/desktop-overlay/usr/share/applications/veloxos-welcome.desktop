@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=VeloxOS Welcome
+Comment=Configure your VeloxOS experience
+Exec=/usr/local/bin/veloxos-welcome.sh
+Icon=distributor-logo-manjaro
+Terminal=false
+Categories=System;Settings;

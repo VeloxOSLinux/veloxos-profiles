@@ -1,0 +1,105 @@
+/* VeloxOS Calamares Stylesheet 
+    Farben: #00b0f0 (Velox-Blau), #0d1117 (Dunkel), #161b22 (Akzent)
+*/
+
+/* Das Hauptfenster */
+#mainApp {
+    background-color: #0d1117;
+}
+
+#mainText {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Die Seitenleiste (Sidebar) */
+#sidebarApp {
+    background-color: #0d1117;
+    border-right: 1px solid rgba(0, 176, 240, 0.2);
+    color: white;
+}
+
+/* Navigation am unteren Rand */
+#navigationBar {
+    background-color: #0d1117;
+    border-top: 1px solid rgba(0, 176, 240, 0.2);
+}
+
+/* Ändert die Schriftfarbe für das gesamte Fenster */
+QWidget {
+    color: white;
+    font-family: "Inter", "Cantarell", "Sans Serif";
+}
+
+/* Spezifisch für das Dropdown (ComboBox) */
+QComboBox {
+    color: #eff0f1;
+    background-color: #31363b;
+    border: 1px solid #76797c;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Die Liste innerhalb des Dropdowns */
+QComboBox QAbstractItemView {
+    color: #eff0f1;
+    background-color: #232629;
+    selection-background-color: #3daee9;
+}
+
+/* Buttons (Weiter, Zurück, Abbrechen) */
+QPushButton {
+    background-color: #161b22;
+    color: white;
+    border: 1px solid rgba(0, 176, 240, 0.5);
+    border-radius: 6px;
+    padding: 6px 15px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #00b0f0;
+    color: #0d1117;
+    border: 1px solid #00b0f0;
+}
+
+QPushButton:disabled {
+    background-color: #2d333b;
+    color: #8b949e;
+    border: 1px solid transparent;
+}
+
+/* Fortschrittsbalken (Progress Bar) */
+QProgressBar {
+    background-color: #161b22;
+    border: 1px solid rgba(0, 176, 240, 0.2);
+    border-radius: 4px;
+    text-align: center;
+    color: white;
+}
+
+QProgressBar::chunk {
+    background-color: #00b0f0;
+    width: 10px;
+}
+
+/* Tooltips */
+QToolTip {
+    background-color: #161b22;
+    color: white;
+    border: 1px solid #00b0f0;
+}
+
+/* Textfelder und Inputs */
+QLineEdit {
+    background-color: #0d1117;
+    border: 1px solid rgba(0, 176, 240, 0.3);
+    border-radius: 4px;
+    padding: 4px;
+    color: white;
+}
+
+QLineEdit:focus {
+    border: 1px solid #00b0f0;
+}

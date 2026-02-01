@@ -1,0 +1,6 @@
+NAME="VeloxOS"
+ID=veloxos
+ID_LIKE=manjaro
+PRETTY_NAME="VeloxOS"
+ANSI_COLOR="0;34"
+HOME_URL="https://veloxos.hrskully.de/"
