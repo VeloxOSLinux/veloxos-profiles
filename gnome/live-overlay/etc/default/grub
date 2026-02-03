@@ -33,7 +33,7 @@ GRUB_DISABLE_RECOVERY=true
 # GRUB_BACKGROUND="/usr/share/grub/background.png"
 
 # Aktiviere das neue VeloxOS-Theme
-GRUB_THEME="/usr/share/grub/themes/veloxos/theme.txt"
+GRUB_THEME="/usr/share/grub/themes/VeloxOS-live/theme.txt"
 
 # Standard-Farben werden durch Theme überschrieben (daher auskommentiert)
 # GRUB_COLOR_NORMAL="light-gray/black"
