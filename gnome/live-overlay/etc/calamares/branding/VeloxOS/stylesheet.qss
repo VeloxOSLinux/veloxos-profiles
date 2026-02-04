@@ -1,10 +1,10 @@
 /* VeloxOS Calamares Stylesheet 
-    Farben: #00b0f0 (Velox-Blau), #0d1117 (Dunkel), #161b22 (Akzent)
+   Optimiert für Lesbarkeit und transparentes Background-Design
 */
 
-/* Das Hauptfenster */
+/* Hauptfenster transparent machen, damit das Bild in der QML durchscheint */
 #mainApp {
-    background-color: #0d1117;
+    background: transparent;
 }
 
 #mainText {
@@ -13,11 +13,10 @@
     color: white;
 }
 
-/* Die Seitenleiste (Sidebar) */
+/* Die Seitenleiste (Sidebar) - Leicht transparent für Tiefe */
 #sidebarApp {
-    background-color: #0d1117;
+    background-color: rgba(13, 17, 23, 0.9);
     border-right: 1px solid rgba(0, 176, 240, 0.2);
-    color: white;
 }
 
 /* Navigation am unteren Rand */
@@ -26,29 +25,28 @@
     border-top: 1px solid rgba(0, 176, 240, 0.2);
 }
 
-/* Ändert die Schriftfarbe für das gesamte Fenster */
 QWidget {
     color: white;
     font-family: "Inter", "Cantarell", "Sans Serif";
 }
 
-/* Spezifisch für das Dropdown (ComboBox) */
+/* --- OPTIMIERT: Dropdowns im Velox-Stil --- */
 QComboBox {
-    color: #eff0f1;
-    background-color: #31363b;
-    border: 1px solid #76797c;
+    color: white;
+    background-color: #161b22;
+    border: 1px solid rgba(0, 176, 240, 0.3);
     border-radius: 4px;
     padding: 5px;
 }
 
-/* Die Liste innerhalb des Dropdowns */
 QComboBox QAbstractItemView {
-    color: #eff0f1;
-    background-color: #232629;
-    selection-background-color: #3daee9;
+    color: white;
+    background-color: #0d1117;
+    selection-background-color: #00b0f0;
+    selection-color: #0d1117;
 }
 
-/* Buttons (Weiter, Zurück, Abbrechen) */
+/* Buttons */
 QPushButton {
     background-color: #161b22;
     color: white;
@@ -64,13 +62,7 @@ QPushButton:hover {
     border: 1px solid #00b0f0;
 }
 
-QPushButton:disabled {
-    background-color: #2d333b;
-    color: #8b949e;
-    border: 1px solid transparent;
-}
-
-/* Fortschrittsbalken (Progress Bar) */
+/* Fortschrittsbalken */
 QProgressBar {
     background-color: #161b22;
     border: 1px solid rgba(0, 176, 240, 0.2);
@@ -81,25 +73,18 @@ QProgressBar {
 
 QProgressBar::chunk {
     background-color: #00b0f0;
-    width: 10px;
 }
 
-/* Tooltips */
-QToolTip {
-    background-color: #161b22;
+/* --- DER RETTER FÜR DIE LESBARKEIT --- */
+#ViewStepWidget {
+    background-color: rgba(13, 17, 23, 0.85); /* Etwas dunkler für besseren Kontrast */
+    border-radius: 8px;
+    border: 1px solid rgba(0, 176, 240, 0.2);
+    margin: 10px;
+}
+
+/* Fix für Partitions-Labels und Texte in der Zusammenfassung */
+QLabel {
     color: white;
-    border: 1px solid #00b0f0;
-}
-
-/* Textfelder und Inputs */
-QLineEdit {
-    background-color: #0d1117;
-    border: 1px solid rgba(0, 176, 240, 0.3);
-    border-radius: 4px;
-    padding: 4px;
-    color: white;
-}
-
-QLineEdit:focus {
-    border: 1px solid #00b0f0;
+    background: transparent;
 }
