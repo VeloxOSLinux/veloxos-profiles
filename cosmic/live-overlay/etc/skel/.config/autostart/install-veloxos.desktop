@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Install VeloxOS
+GenericName=Live Installer
+Comment=Install the operating system to disk
+Exec=pkexec calamares
+Icon=calamares
+Terminal=false
+Categories=System;

@@ -1,0 +1,9 @@
+# VeloxOS Wrapper: Täscht linux66 vor, baut aber linux-cachyos
+ALL_config="/etc/mkinitcpio.conf"
+ALL_kver="/boot/vmlinuz-linux-cachyos"
+
+PRESETS=('default' 'fallback')
+
+default_image="/boot/initramfs-linux-cachyos.img"
+fallback_image="/boot/initramfs-linux-cachyos-fallback.img"
+fallback_options="-S autodetect"

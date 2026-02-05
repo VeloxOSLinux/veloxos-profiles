@@ -1,0 +1,121 @@
+## Network
+networkmanager
+>extra networkmanager-openconnect
+>extra networkmanager-openvpn
+>extra network-manager-sstp
+>extra networkmanager-strongswan
+>extra networkmanager-vpnc
+>extra modemmanager
+>extra nss-mdns
+>extra openssh
+
+## Btrfs
+btrfsmaintenance
+grub-btrfs
+>extra timeshift-autosnap-manjaro
+
+## Libraries for Sound/Audio/Video
+>extra libdvdcss
+>extra manjaro-alsa
+>extra manjaro-gstreamer
+>extra manjaro-pipewire
+
+## Fonts
+noto-fonts
+>extra noto-fonts-cjk
+>extra noto-fonts-emoji
+>extra noto-fonts-extra
+>extra ttf-dejavu
+ttf-hack-nerd
+ttf-meslo-nerd-font-powerlevel10k
+>extra ttf-indic-otf
+
+## Package management
+pamac-gtk
+>extra pamac-flatpak-plugin
+
+## Printing
+>extra manjaro-printer
+>extra system-config-printer
+
+## COSMIC Desktop Environment (The Core)
+cosmic-session
+cosmic-applets
+cosmic-bg
+cosmic-comp
+cosmic-launcher
+cosmic-notifications
+cosmic-osd
+cosmic-panel
+cosmic-settings
+cosmic-term
+cosmic-randr
+cosmic-files
+cosmic-edit
+cosmic-greeter
+cosmic-icons
+xdg-desktop-portal-cosmic
+
+## Essential Desktop Helpers (DE-independent)
+file-roller
+gvfs
+>extra gvfs-afc
+>extra gvfs-mtp
+>extra gvfs-smb
+>extra gvfs-nfs
+papers                      # PDF Viewer (GTK, but lightweight)
+loupe                       # Image Viewer
+showtime                    # Video Player
+>extra simple-scan
+>extra snapshot
+
+## Themes & Look
+bibata-cursor-theme
+papirus-maia-icon-theme
+plymouth-theme-manjaro
+qt5ct
+qt6ct
+
+## Applications
+>extra apparmor
+>extra ffmpegthumbnailer
+>extra ffmpeg-audio-thumbnailer
+fprintd
+gnome-firmware              # Works fine on Cosmic for firmware updates
+gufw
+htop
+inxi
+manjaro-settings-manager
+manjaro-settings-manager-notifier
+>extra thunderbird
+>extra timeshift
+>extra webapp-manager
+wl-clipboard
+
+## VeloxOS Defaults (Gaming & Performance)
+librewolf-bin
+betterbird-bin
+zram-generator
+proton-cachyos
+steam
+heroic-games-launcher-bin
+gamemode
+yad
+
+## Optional dependencies
+>extra 7zip
+>extra squashfs-tools
+>extra unace
+>extra unrar
+>extra zip
+dmidecode
+mesa-utils
+
+## Settings & Base
+manjaro-base-skel
+manjaro-browser-settings
+>extra manjaro-settings-samba
+
+## Xorg/Wayland Infrastructure
+>extra manjaro-input
+xorg-server-xwayland        # For running X11 apps inside Cosmic

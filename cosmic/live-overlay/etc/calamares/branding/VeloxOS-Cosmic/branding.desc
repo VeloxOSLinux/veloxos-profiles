@@ -1,0 +1,46 @@
+---
+componentName: VeloxOS-Cosmic
+
+### WELCOME / OVERALL WORDING
+welcomeStyleCalamares: false
+welcomeExpandingLogo: true
+
+### WINDOW CONFIGURATION
+windowExpanding: normal
+windowSize: 800px,520px
+windowPlacement: center
+
+### PANELS CONFIGURATION
+sidebar: widget,left
+navigation: widget,bottom
+
+### STRINGS, IMAGES AND COLORS
+strings:
+    productName:         "VeloxOS"
+    shortProductName:    "Velox"
+    version:             "2026.01"
+    shortVersion:        "2026.01"
+    versionedName:       "VeloxOS 2026.01"
+    shortVersionedName:  "VeloxOS 2026.01"
+    bootloaderEntryName: "VeloxOS"
+    productUrl:          "https://veloxos.org"
+    supportUrl:          "https://github.com/HrSkully/VeloxOS/issues"
+    knownIssuesUrl:      "https://github.com/HrSkully/VeloxOS/issues"
+    releaseNotesUrl:     "https://veloxos.org"
+
+images:
+    productIcon:         "squid.png"
+    productLogo:         "squid.png"
+    productWelcome:      "squid.png"
+    # productWallpaper:  "wallpaper.png"
+
+### COLORS (Velox Blue Design)
+style:
+   SidebarBackground:        "#0d1117"
+   SidebarText:              "#FFFFFF"
+   SidebarTextCurrent:       "#00b0f0"
+   SidebarBackgroundCurrent: "#161b22"
+
+### SLIDESHOW
+slideshow:               "show.qml"
+slideshowAPI: 2
