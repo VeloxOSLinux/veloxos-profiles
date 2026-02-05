@@ -101,6 +101,7 @@ steam
 heroic-games-launcher-bin
 gamemode
 yad
+pciutils
 
 ## Optional dependencies
 >extra 7zip

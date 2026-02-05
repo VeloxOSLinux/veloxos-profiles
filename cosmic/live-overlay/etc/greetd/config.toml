@@ -2,5 +2,11 @@
 vt = 1
 
 [default_session]
-command = "cosmic-greeter"
+command = "cosmic-session"
 user = "veloxos"
+service = "login"
+
+[initial_session]
+command = "cosmic-session"
+user = "veloxos"
+service = "login"
