@@ -1,90 +1,57 @@
-/* VeloxOS - Global Dark Theme */
+/* VeloxOS Stylesheet */
 
-/* --- BASIS LAYOUT --- */
-#mainApp, #centralWidget, #stackWidget {
-    background: transparent !important;
-}
-
-#sidebarApp {
-    background-color: rgba(13, 17, 23, 0.95);
-    border-bottom: 2px solid #00b0f0;
-    min-height: 100px;
-    max-height: 100px;
+#mainApp {
+    background-color: transparent;
 }
 
 #ViewStepWidget {
-    background-color: rgba(13, 17, 23, 0.85) !important;
+    background-color: rgba(13, 17, 23, 0.85);
     border-radius: 10px;
-    border: 1px solid rgba(0, 176, 240, 0.2);
-    margin: 15px;
 }
 
-/* --- FIX: WEISS-AUF-WEISS (INPUTS) --- */
+QWidget {
+    font: 14px "Inter", "Sans Serif";
+    color: white;
+}
+
+/* Fix für Eingabefelder (Username/Passwort) */
 QLineEdit {
-    background-color: #161b22 !important;
-    color: white !important;
-    border: 1px solid rgba(0, 176, 240, 0.4);
-    border-radius: 4px;
-    padding: 6px;
-}
-
-QLineEdit:focus {
+    background-color: #161b22;
+    color: white;
     border: 1px solid #00b0f0;
+    border-radius: 4px;
+    padding: 5px;
 }
 
-/* --- FIX: LISTEN & TABELLEN (PARTITIONEN) --- */
-QTreeView, QListView, QTableView, QAbstractItemView {
-    background-color: #161b22 !important;
-    color: white !important;
-    border: 1px solid rgba(0, 176, 240, 0.2);
+/* Fix für Listen (Partitionen/Tastatur) */
+QAbstractItemView {
+    background-color: #161b22;
+    color: white;
     selection-background-color: #00b0f0;
     selection-color: #0d1117;
 }
 
 QHeaderView::section {
-    background-color: #0d1117 !important;
-    color: white !important;
-    padding: 5px;
-    border: 1px solid rgba(0, 176, 240, 0.2);
-}
-
-/* --- WIDGETS --- */
-QWidget {
-    color: white;
-    font-family: "Inter", "Sans Serif";
-}
-
-QLabel {
-    color: white !important;
-}
-
-QComboBox {
-    background-color: #161b22 !important;
-    color: white !important;
-    border: 1px solid #00b0f0;
+    background-color: #0d1117;
+    color: #00b0f0;
     padding: 4px;
+    border: 1px solid #161b22;
 }
 
 /* Buttons unten */
 #navigationBar {
     background-color: #0d1117;
-    border-top: 1px solid rgba(0, 176, 240, 0.2);
 }
 
 QPushButton {
     background-color: #161b22;
     color: white;
     border: 1px solid #00b0f0;
-    border-radius: 6px;
-    padding: 6px 20px;
+    border-radius: 4px;
+    padding: 6px 15px;
 }
 
 QPushButton:hover {
     background-color: #00b0f0;
     color: #0d1117;
-}
-
-/* Partitions-Farben */
-#partitionLabels QLabel {
-    color: #00b0f0 !important;
 }

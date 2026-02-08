@@ -1,46 +1,35 @@
 ---
 componentName: VeloxOS-Cosmic
 
-### WELCOME / OVERALL WORDING
 welcomeStyleCalamares: false
 welcomeExpandingLogo: true
-
-### WINDOW CONFIGURATION
 windowExpanding: normal
-windowSize: 800px,520px
+windowSize: 1100px,700px
 windowPlacement: center
 
-### PANELS CONFIGURATION
+# WICHTIG: QML oben platziert
 sidebar: qml,top
-navigation: widget,bottom
+navigation: widget
 
-### STRINGS, IMAGES AND COLORS
 strings:
     productName:         "VeloxOS"
-    shortProductName:    "Velox"
+    shortProductName:    "VeloxOS"
     version:             "2026.01"
     shortVersion:        "2026.01"
-    versionedName:       "VeloxOS 2026.01"
-    shortVersionedName:  "VeloxOS 2026.01"
+    versionedName:       "VeloxOS"
+    shortVersionedName:  "VeloxOS"
     bootloaderEntryName: "VeloxOS"
-    productUrl:          "https://veloxos.org"
-    supportUrl:          "https://github.com/HrSkully/VeloxOS/issues"
-    knownIssuesUrl:      "https://github.com/HrSkully/VeloxOS/issues"
-    releaseNotesUrl:     "https://veloxos.org"
 
 images:
-    productIcon:         "squid.png"
     productLogo:         "squid.png"
+    productIcon:         "squid.png"
     productWelcome:      "squid.png"
-    # productWallpaper:  "wallpaper.png"
 
-### COLORS (Velox Blue Design)
 style:
    SidebarBackground:        "#0d1117"
-   SidebarText:              "#FFFFFF"
-   SidebarTextCurrent:       "#00b0f0"
-   SidebarBackgroundCurrent: "#161b22"
+   SidebarText:              "#ffffff"
+   SidebarTextCurrent:       "#0d1117"
+   SidebarBackgroundCurrent: "#00b0f0"
 
-### SLIDESHOW
 slideshow:               "show.qml"
 slideshowAPI: 2

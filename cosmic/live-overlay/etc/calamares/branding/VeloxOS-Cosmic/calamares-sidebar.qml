@@ -1,66 +1,50 @@
-import QtQuick 2.5
-import QtQuick.Layouts 1.1
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls
+import io.calamares.ui 1.0
 
 Rectangle {
-    id: sidebar
-    color: "transparent"
-    implicitHeight: 100
-    
+    id: sideBar
+    color: "#0d1117" 
+    implicitHeight: 80
+    width: parent ? parent.width : 1100 // Fix für den "null" Error
+
     RowLayout {
         anchors.fill: parent
-        anchors.leftMargin: 25
-        anchors.rightMargin: 25
-        spacing: 30
+        anchors.leftMargin: 20
+        anchors.rightMargin: 20
+        spacing: 15
 
-        // Logo Bereich
+        // Logo mit korrektem dynamischen Pfad
         Image {
             id: logo
-            source: "logo.png"
             Layout.preferredHeight: 50
             Layout.preferredWidth: 50
             fillMode: Image.PreserveAspectFit
+            source: "squid.png"
         }
 
-        // Navigations-Schritte
-        Row {
-            Layout.fillWidth: true
-            Layout.alignment: Qt.AlignVCenter
-            spacing: 20
+        // Navigations-Repeater
+        Repeater {
+            model: ViewManager
+            
+            delegate: Rectangle {
+                Layout.fillWidth: true
+                Layout.preferredHeight: 35
+                Layout.alignment: Qt.AlignVCenter
+                radius: 4
+                // Prüfen ob dieser Index der aktuelle Schritt ist
+                color: (index === ViewManager.currentStepIndex ? "#00b0f0" : "transparent")
 
-            Repeater {
-                model: calamares.modules
-                
-                delegate: Column {
-                    spacing: 8
-                    opacity: modelData.isCurrent ? 1.0 : 0.6
-
-                    Text {
-                        text: modelData.name
-                        color: modelData.isCurrent ? "#00b0f0" : "#ffffff"
-                        font.pixelSize: 14
-                        font.bold: modelData.isCurrent
-                        font.family: "Inter, Sans Serif"
-                    }
-
-                    // Der Indikator-Strich (Velox-Blau)
-                    Rectangle {
-                        width: parent.width
-                        height: 3
-                        color: "#00b0f0"
-                        visible: modelData.isCurrent
-                        radius: 2
-                    }
+                Text {
+                    anchors.centerIn: parent
+                    text: display // 'display' ist der Name des Moduls
+                    color: (index === ViewManager.currentStepIndex ? "#0d1117" : "#ffffff")
+                    font.bold: (index === ViewManager.currentStepIndex)
+                    font.pixelSize: 13
+                    elide: Text.ElideRight
                 }
             }
-        }
-        
-        // About Button (Optional)
-        Text {
-            text: "VeloxOS v2026.01"
-            color: "#444"
-            font.pixelSize: 10
-            Layout.alignment: Qt.AlignBottom | Qt.AlignRight
-            Layout.bottomMargin: 5
         }
     }
 }
