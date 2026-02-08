@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=VeloxOS Welcome
-Comment=VeloxOS Welcome Screen
-Exec=/usr/local/bin/veloxos-welcome.sh --autostart
-Icon=distributor-logo-manjaro
-Terminal=false
-Categories=System;
-StartupNotify=false

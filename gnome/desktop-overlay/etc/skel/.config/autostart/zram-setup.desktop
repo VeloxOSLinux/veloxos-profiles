@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=VeloxOS zRAM Setup
-Exec=sudo /usr/local/bin/velox-zram-setup
-Terminal=false
-NoDisplay=true
-X-GNOME-Autostart-enabled=true
