@@ -11,7 +11,7 @@ windowSize: 800px,520px
 windowPlacement: center
 
 ### PANELS CONFIGURATION
-sidebar: widget,left
+sidebar: qml,top
 navigation: widget,bottom
 
 ### STRINGS, IMAGES AND COLORS

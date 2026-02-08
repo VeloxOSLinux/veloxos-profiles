@@ -13,6 +13,14 @@ terminal-font: "Terminus 14"
     file = "logo.png"
 }
 
+# Hintergrund fürs Menu
++ image {
+    left = 29%
+    top = 34%
+    width = 42%
+    height = 52%
+    file = "menu_bg.png"
+}
 
 # Das Boot-Menü:
 + boot_menu {
@@ -37,7 +45,7 @@ terminal-font: "Terminus 14"
 + progress_bar {
     id = "__timeout__"
     left = 40%
-    top = 68%
+    top = 87%
     width = 20%
     height = 16
     show_text = true
