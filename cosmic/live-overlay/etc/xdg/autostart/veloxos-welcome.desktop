@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=VeloxOS Welcome
+Exec=/usr/local/bin/VeloxOS-Welcome.appimage --autostart
+Icon=VeloxOS-Welcome
+Terminal=false
+Categories=System;

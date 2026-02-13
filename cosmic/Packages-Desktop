@@ -100,8 +100,13 @@ proton-cachyos
 steam
 heroic-games-launcher-bin
 gamemode
-yad
+
+## VeloxOS Settings Default
 pciutils
+chwd
+kmod
+python-pyfuse3
+base-devel
 
 ## Optional dependencies
 >extra 7zip

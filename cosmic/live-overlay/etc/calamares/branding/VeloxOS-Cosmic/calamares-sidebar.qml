@@ -29,19 +29,20 @@ Rectangle {
             model: ViewManager
             
             delegate: Rectangle {
-                Layout.fillWidth: true
+                Layout.preferredWidth: sideBar.width / 12
                 Layout.preferredHeight: 35
                 Layout.alignment: Qt.AlignVCenter
                 radius: 4
-                // Prüfen ob dieser Index der aktuelle Schritt ist
                 color: (index === ViewManager.currentStepIndex ? "#00b0f0" : "transparent")
 
                 Text {
                     anchors.centerIn: parent
-                    text: display // 'display' ist der Name des Moduls
+                    text: display
                     color: (index === ViewManager.currentStepIndex ? "#0d1117" : "#ffffff")
                     font.bold: (index === ViewManager.currentStepIndex)
                     font.pixelSize: 13
+                    horizontalAlignment: Text.AlignHCenter
+                    width: parent.width
                     elide: Text.ElideRight
                 }
             }
