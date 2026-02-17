@@ -92,6 +92,7 @@ manjaro-settings-manager-notifier
 >extra timeshift
 >extra webapp-manager
 wl-clipboard
+polkit-gnome
 
 ## VeloxOS Defaults (Gaming & Performance)
 # Explizite Vulkan-Provider um Build-Abbrüche zu verhindern
@@ -130,6 +131,7 @@ manjaro-browser-settings
 >extra manjaro-settings-samba
 
 ## Xorg/Wayland Infrastructure
+xorg-xauth
 # Wichtig für Grafik-Kompatibilität in VMs
 >extra manjaro-input
 cachyos-extra-znver4/xorg-xwayland       # For running X11 apps inside Cosmic
