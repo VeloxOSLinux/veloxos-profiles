@@ -2,6 +2,6 @@
 Type=Application
 Name=VeloxOS Welcome
 Exec=/usr/local/bin/VeloxOS-Welcome.appimage --autostart
-Icon=VeloxOS-Welcome
+Icon=/usr/share/icons/hicolor/scalable/apps/distributor-logo.svg
 Terminal=false
 Categories=System;

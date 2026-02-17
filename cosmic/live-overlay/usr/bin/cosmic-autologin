@@ -1,0 +1,11 @@
+#!/bin/bash
+# Warte max. 10 Sekunden, bis der User veloxos existiert
+for i in {1..100}; do
+    if id "veloxos" &>/dev/null; then
+        break
+    fi
+    sleep 0.1
+done
+
+# Jetzt die Session starten
+exec dbus-run-session cosmic-session

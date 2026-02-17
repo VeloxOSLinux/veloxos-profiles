@@ -39,6 +39,7 @@ pamac-gtk
 >extra system-config-printer
 
 ## COSMIC Desktop Environment (The Core)
+# CachyOS Brücken-Pakete zuerst
 cosmic-session
 cosmic-applets
 cosmic-bg
@@ -93,12 +94,16 @@ manjaro-settings-manager-notifier
 wl-clipboard
 
 ## VeloxOS Defaults (Gaming & Performance)
+# Explizite Vulkan-Provider um Build-Abbrüche zu verhindern
+lib32-vulkan-intel
+lib32-vulkan-radeon
+lib32-vulkan-swrast
 librewolf-bin
 betterbird-bin
 zram-generator
 proton-cachyos
 steam
-heroic-games-launcher-bin
+faugus-launcher
 gamemode
 
 ## VeloxOS Settings Default
@@ -106,6 +111,8 @@ pciutils
 chwd
 kmod
 python-pyfuse3
+cachyos-znver4/gcc
+cachyos-znver4/gcc-libs
 base-devel
 
 ## Optional dependencies
@@ -123,5 +130,6 @@ manjaro-browser-settings
 >extra manjaro-settings-samba
 
 ## Xorg/Wayland Infrastructure
+# Wichtig für Grafik-Kompatibilität in VMs
 >extra manjaro-input
-xorg-server-xwayland        # For running X11 apps inside Cosmic
+cachyos-extra-znver4/xorg-xwayland       # For running X11 apps inside Cosmic

@@ -1,5 +1,5 @@
 [initial_session]
-command = "dbus-run-session cosmic-session"
+command = "/usr/bin/cosmic-autologin"
 user = "veloxos"
 
 [default_session]
