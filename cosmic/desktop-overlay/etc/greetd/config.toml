@@ -1,6 +1,3 @@
-[terminal]
-vt = 1
-
 [default_session]
-command = "cosmic-greeter"
-user = "greetd"	
+command = "start-cosmic"
+user = "veloxos"
