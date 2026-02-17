@@ -109,12 +109,15 @@ gamemode
 
 ## VeloxOS Settings Default
 pciutils
+xdg-utils
 chwd
 kmod
 python-pyfuse3
+python-pyqt6
 cachyos-znver4/gcc
 cachyos-znver4/gcc-libs
 base-devel
+cachyos-kernel-manager
 
 ## Optional dependencies
 >extra 7zip

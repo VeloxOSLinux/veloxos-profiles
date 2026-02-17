@@ -1,7 +1,10 @@
-[initial_session]
-command = "/usr/bin/cosmic-autologin"
-user = "veloxos"
+[terminal]
+vt = 1
 
 [default_session]
-command = "cosmic-greeter"
-user = "greeter"
+command = "cosmic-session"
+user = "veloxoslive"
+
+[initial_session]
+command = "cosmic-session"
+user = "veloxoslive"

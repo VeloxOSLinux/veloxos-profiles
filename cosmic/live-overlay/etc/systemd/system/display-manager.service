@@ -1,0 +1,10 @@
+[Unit]
+Description=Greetd Display Manager
+After=systemd-user-sessions.service
+
+[Service]
+ExecStart=/usr/bin/greetd
+Restart=always
+
+[Install]
+Alias=display-manager.service

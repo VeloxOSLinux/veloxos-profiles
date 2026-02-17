@@ -1,0 +1,10 @@
+[Unit]
+Description=COSMIC Greeter
+After=systemd-user-sessions.service network.target
+
+[Service]
+ExecStart=/usr/bin/greetd
+Restart=always
+
+[Install]
+WantedBy=graphical.target
