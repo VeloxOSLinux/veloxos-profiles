@@ -83,6 +83,7 @@ base-devel
 cachyos-kernel-manager
 mesa-utils
 >extra squashfs-tools
+dex
 
 ## Settings & Base
 manjaro-base-skel
