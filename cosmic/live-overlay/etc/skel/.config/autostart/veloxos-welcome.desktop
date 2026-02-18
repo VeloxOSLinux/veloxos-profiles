@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=VeloxOS Welcome
+Comment=Konfiguriere dein VeloxOS nach der Installation
+Exec=/usr/bin/veloxos-welcome
+Icon=VeloxOS-Welcome
+Terminal=false
+Categories=System;Settings;
+X-GNOME-Autostart-enabled=true

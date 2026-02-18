@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Polkit GNOME Authentication Agent
+Exec=/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+NoDisplay=true
+X-GNOME-AutoRestart=false

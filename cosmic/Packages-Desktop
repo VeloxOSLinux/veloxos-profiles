@@ -81,7 +81,6 @@ kmod
 base-devel
 cachyos-kernel-manager
 mesa-utils
-python-pyqt6 
 >extra squashfs-tools
 
 ## Settings & Base
