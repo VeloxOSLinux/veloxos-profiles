@@ -54,7 +54,7 @@ xdg-desktop-portal-cosmic
 ## Themes
 bibata-cursor-theme
 papirus-maia-icon-theme
-plymouth-theme-manjaro
+#plymouth-theme-manjaro
 qt5ct
 qt6ct
 
@@ -69,6 +69,7 @@ loupe
 showtime
 librewolf-bin
 betterbird-bin
+faugus-launcher
 zram-generator
 steam
 gamemode
@@ -88,3 +89,6 @@ manjaro-base-skel
 manjaro-browser-settings
 xorg-xauth
 cachyos-extra-znver4/xorg-xwayland
+qt6-wayland
+libxcb
+xcb-util-cursor
