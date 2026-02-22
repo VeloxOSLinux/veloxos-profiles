@@ -1,0 +1,84 @@
+/* VeloxOS Stylesheet */
+
+#mainApp {
+    background-color: transparent;
+}
+
+#ViewStepWidget {
+    background-color: rgba(13, 17, 23, 0.85);
+    border-radius: 10px;
+}
+
+QWidget {
+    font: 14px "Inter", "Sans Serif";
+    color: white;
+}
+
+/* Fix für Eingabefelder (Username/Passwort) */
+QLineEdit {
+    background-color: #161b22;
+    color: white;
+    border: 1px solid #00b0f0;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Fix für Listen (Partitionen/Tastatur) */
+QAbstractItemView {
+    background-color: #161b22;
+    color: white;
+    selection-background-color: #00b0f0;
+    selection-color: #0d1117;
+}
+
+QHeaderView::section {
+    background-color: #0d1117;
+    color: #00b0f0;
+    padding: 4px;
+    border: 1px solid #161b22;
+}
+
+/* Buttons unten */
+#navigationBar {
+    background-color: #0d1117;
+}
+
+QPushButton {
+    background-color: #161b22;
+    color: white;
+    border: 1px solid #00b0f0;
+    border-radius: 4px;
+    padding: 6px 15px;
+}
+
+QPushButton:hover {
+    background-color: #00b0f0;
+    color: #0d1117;
+}
+
+QComboBox {
+    background-color: #161b22;
+    color: #ffffff;
+    border: 1px solid #00b0f0;
+    border-radius: 4px;
+    padding: 3px 10px;
+    selection-background-color: #00b0f0;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #161b22;
+    color: #ffffff;
+    border: 1px solid #00b0f0;
+    selection-background-color: #00b0f0;
+    selection-color: #0d1117;
+    outline: none;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left-width: 1px;
+    border-left-color: #00b0f0;
+    border-left-style: solid;
+}
