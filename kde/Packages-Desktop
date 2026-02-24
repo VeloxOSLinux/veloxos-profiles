@@ -67,7 +67,6 @@ pamac-cli
 #>extra pamac-snap-plugin
 >extra pamac-flatpak-plugin
 >extra fwupd
-#manjaro-application-utility
 
 ## Printing
 >extra manjaro-printer
@@ -122,7 +121,6 @@ gnome-themes-extra
 #oxygen # needed to provide KDE system sounds
 #oxygen-icons
 sddm-breath-theme
-#grub-theme-manjaro
 breeze5 # Fore Qt5 Breeze style
 breeze-gtk
 plymouth
@@ -194,7 +192,6 @@ poppler-data  # encoding data to display PDF documents containing CJK characters
 ## Applications
 >extra elisa
 dmidecode # for inxi -m output
-firefox
 htop
 inxi
 kaccounts-providers                # required by kio-gdrive
@@ -203,7 +200,6 @@ kaccounts-providers                # required by kio-gdrive
 #>extra onlyoffice-desktopeditors
 #>extra freeoffice
 #>extra libreoffice-still
-manjaro-hello
 manjaro-application-utility
 #manjaro-settings-manager-kcm
 manjaro-settings-manager-knotifier
@@ -256,14 +252,12 @@ power-profiles-daemon
 ## VeloxOS Apps
 librewolf-bin
 betterbird-bin
-faugus-launcher
+#faugus-launcher ### comming soon, must add to my custom repo
 steam
 gamemode
 
 ## VeloxOS & CachyOS Tools (Core)
 pciutils
 xdg-desktop-portal-kde
-chwd
 kmod
 base-devel
-cachyos-kernel-manager
