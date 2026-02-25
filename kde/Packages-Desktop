@@ -101,7 +101,7 @@ plasma-nm
 plasma-pa
 plasma-systemmonitor               # plasma-meta, replaces ksysguard
 plasma-workspace                   # required by plasma-desktop, etc., replaces plasma-wayland-session
->extra plasma-workspace-wallpapers
+plasma-workspace-wallpapers
 powerdevil
 systemsettings
 plasma-browser-integration
@@ -111,10 +111,11 @@ plasma-thunderbolt
 ## Themes QT/GTK/SDDM
 gnome-themes-extra
 sddm-breath-theme
-breeze5 # Fore Qt5 Breeze style
+breeze
 breeze-gtk
 plymouth
-plymouth-theme-manjaro
+plasma-wayland-protocols
+xdg-desktop-portal-gtk
 
 # needed by manjaro-application-utility
 # category icons(Browsers, Backup,etc)
@@ -175,13 +176,6 @@ powertop
 fastfetch
 plymouth-kcm
 yakuake
-
-## Documentation
-#manjaro-documentation-en
-
-## Settings packages
-manjaro-kde-settings
-manjaro-browser-settings
 
 ## Xorg Input Drivers
 xf86-input-elographics
