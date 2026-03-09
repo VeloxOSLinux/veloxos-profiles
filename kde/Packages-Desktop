@@ -209,6 +209,7 @@ xdg-utils
 power-profiles-daemon
 
 ## Misc
+veloxos-keyring
 
 ## VeloxOS Apps
 librewolf-bin
@@ -219,7 +220,6 @@ gamemode
 
 
 ## VeloxOS & CachyOS Tools (Core)
-veloxos-keyring
 chwd
 pciutils
 xdg-desktop-portal-kde
