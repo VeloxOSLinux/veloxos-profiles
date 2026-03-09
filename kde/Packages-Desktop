@@ -187,8 +187,11 @@ xf86-input-void
 >multilib lib32-libva-intel-driver
 >multilib lib32-libva-mesa-driver
 libva-intel-driver
-libva-mesa-driver
+libva
+libva-utils
+mesa
 mesa-utils
+intel-media-driver
 >multilib lib32-mesa-utils
 numlockx
 xdg-user-dirs
@@ -214,8 +217,13 @@ faugus-launcher
 steam
 gamemode
 
+
 ## VeloxOS & CachyOS Tools (Core)
+veloxos-keyring
+chwd
 pciutils
 xdg-desktop-portal-kde
 kmod
 base-devel
+velox-package-manager
+welcome-veloxos
