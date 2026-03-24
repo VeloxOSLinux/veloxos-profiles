@@ -210,6 +210,8 @@ power-profiles-daemon
 
 ## Misc
 veloxos-keyring
+veloxos-wallpapers
+veloxos-kde-settings
 
 ## VeloxOS Apps
 librewolf-bin
@@ -221,6 +223,7 @@ gamemode
 
 ## VeloxOS & CachyOS Tools (Core)
 chwd
+gufw
 pciutils
 xdg-desktop-portal-kde
 kmod
