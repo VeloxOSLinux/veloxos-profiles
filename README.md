@@ -1,6 +1,6 @@
 # VeloxOS Profiles
 
-⚠️ IMPORTANT: DEVELOPMENT STATUS VeloxOS is currently in early development. These profiles are far from finished, and many features are still being implemented. Expect bugs, incomplete configurations, and visual inconsistencies. Use at your own risk.
+[DEPRECATED / ARCHIVED]
 ---
 
 This repository contains the build profiles and custom configuration
